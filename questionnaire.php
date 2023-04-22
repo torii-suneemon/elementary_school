@@ -150,18 +150,7 @@ if(count($err) === 0){
 
     header('Location: questionnaire_form.php');
     return;
-    // echo '登録失敗しました<br>';
 }
-
-
-// $_SESSION['data'] = [
-//     'child_name' => $res['id'],
-//     'username' => $res['username'],
-//     'email' => $res['email'],
-//     'password' => $res['password']
-// ];
-
-
 ?>
 
 <!DOCTYPE html>
