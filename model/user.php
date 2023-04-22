@@ -1,8 +1,8 @@
 <?php
 
 $dsn = 'mysql:dbname=zpj4u_u6354678;host=localhost;charset=utf8';
-$user = 'zpj4u_torii_suneemon';
-$password = '7njSs_G-zfVk&_H';
+$user = '';
+$password = '';
 
 try{
     $pdo = new PDO($dsn, $user, $password);
