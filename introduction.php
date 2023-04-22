@@ -94,18 +94,6 @@ session_start();
         </div>
     </section>
 
-    <!-- <div class="main">
-        <section class="topics">
-            <h2>お知らせ</h2>
-            <ul>
-                <li><time datetime="2015-06-12">2015年06月12日</time>セカンドオピニオン外来を開始いたします。</li>
-                <li><time datetime="2015-05-23">2015年05月23日</time>6月より最新MRI検査機が2台に増えます。</li>
-                <li><time datetime="2015-05-01">2015年05月01日</time>平成27年度10月採用予定の看護師を募集します。</li>
-                <li><time datetime="2015-04-20">2023年01月20日</time>当院が緊急時避難ビルに指定されました。</li>
-            </ul>
-        </section>
-    </div> -->
-   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
