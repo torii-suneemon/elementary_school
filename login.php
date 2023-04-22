@@ -37,8 +37,6 @@ if(count($err) === 0){
     // PDO::FETCH_ASSOC(データベースから該当した条件のデータを1件だけ取る)
 	$res = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    // print_r($res);
-
 	if($res && password_verify($password, $res['password'])){
         $_SESSION['data'] = [
             'id' => $res['id'],
@@ -53,7 +51,6 @@ if(count($err) === 0){
 
         header('Location: login_form.php');
         return;
-        // echo 'パスワードが違います。';
     }
 }
 
