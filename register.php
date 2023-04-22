@@ -36,20 +36,14 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
   }else{
     $err['password'] =  'パスワードを入力してください。';
   }
-//   print_r($password);
 // 登録するpasswordをハッシュ化
   $hashPassword = password_hash($password, PASSWORD_DEFAULT);
-//   print_r($hashPassword);
+
 }
 
-// $name = $_POST['name'];
-// $email = $_POST['email'];
-// $hashPassword = $_POST['password'];
-// $hashPassword = $password
 if(count($err) === 0){
     $sql = ('INSERT INTO users (username, email, password) VALUES (?,?,?)');
     $stmt = $pdo->prepare($sql);
-    // $b = array(':name'=>$name,':email'=>$email,':password'=$password);
     $stmt->execute([$username,$email,$hashPassword]);
     session_destroy();
 }else{
@@ -60,15 +54,7 @@ if(count($err) === 0){
 
   header('Location: signup.php');
   return;
-
-    // echo '登録失敗しました<br>';
 }
-
-// $sql = ('INSERT INTO users (username, email, password) VALUES (:name,:email,:password)');
-//     $stmt = $pdo->prepare($sql);
-//     // 登録するpasswordをハッシュ化
-//     $b = array(':name'=>$name,':email'=>$email,':password'=>password_hash($hashPassword, PASSWORD_DEFAULT));
-//     $stmt->execute($b);
 
 ?>
 
