@@ -48,7 +48,6 @@ foreach($result as $loop){
 
 }
 
-// print_r($_SESSION['login_data']['email']);
 ?>
 
 <div><a href="index.php">TOPへ戻る</a></div>
