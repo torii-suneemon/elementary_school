@@ -184,10 +184,4 @@ $err = $_SESSION;
 </body>
 </html>
 
-<?php
 
-// セッション削除
-$_SESSION = [];
-session_destroy();
-
-?>
